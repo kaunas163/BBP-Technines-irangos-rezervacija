@@ -1,0 +1,62 @@
+// tools navigation
+
+.tools-nav {
+    width: 260px;
+    height: 100%;
+    background: white;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 1px solid $borderColor;
+    padding: calc(80px + 1em) 2em 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    nav {
+        a {
+            text-decoration: none;
+            color: $primaryTextColor;
+
+            &:hover {
+              color: $secondaryColor;
+            }
+        }
+
+        & > ul {
+            & > li {
+                margin-bottom: 1.5em;
+
+                & > a {
+                    color: $primaryTextColor;
+                    font-weight: 700;
+                }
+
+                & > ul {
+                    padding-left: 1em;
+                    margin-top: 0.5em;
+
+                    & > li {
+                        margin-bottom: 0.5em;
+
+                        & > a {
+                            font-size: 0.75em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+
+        p {
+            font-size: 0.75em;
+            color: $secondaryTextColor;
+        }
+    }
+}

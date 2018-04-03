@@ -1,0 +1,20 @@
+// colors
+$backgroundColor: #fafafa;
+$primaryColor: #124161;
+$secondaryColor: #1d72ab;
+$borderColor: rgba(0,0,0,.14);
+$primaryTextColor: #212121;
+$secondaryTextColor: #616161;
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&subset=latin-ext');
+$fontFamily: 'Roboto', sans-serif;
+
+// import shared styles
+@import "shared/global";
+@import "shared/navbar";
+@import "shared/tools-nav";
+@import "shared/content";
+
+// import other styles
+@import "home";
