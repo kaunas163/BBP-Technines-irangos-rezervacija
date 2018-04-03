@@ -30,18 +30,18 @@
                 </ul>
             </li>
             <li>
-                <a href="#">Įranga</a>
+                @Html.ActionLink("Įranga", "Index", "Equipment")
                 <ul>
-                    <li><a href="#">Atskiri įrangos vienetai</a></li>
-                    <li><a href="#">Įrangos komplektai</a></li>
-                    <li><a href="#">Nuomojama (rodoma) įranga</a></li>
+                    <li>@Html.ActionLink("Atskiri įrangos vienetai", "Equipment", "Equipment")</li>
+                    <li>@Html.ActionLink("Įrangos komplektai", "Bundles", "Equipment")</li>
+                    <li>@Html.ActionLink("Nuomojama (rodoma) įranga", "ForRent", "Equipment")</li>
                 </ul>
             </li>
             <li>
-                <a href="#">Ataskaitų generavimas</a>
+                @Html.ActionLink("Ataskaitų generavimas", "Index", "Reports")
             </li>
             <li>
-                <a href="#">Sistemos nustatymai</a>
+                @Html.ActionLink("Sistemos nustatymai", "Index", "System")
             </li>
         </ul>
     </nav>
