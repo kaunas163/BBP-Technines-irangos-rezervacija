@@ -5,28 +5,28 @@
                 @Html.ActionLink("Pradžia", "Index", "Home")
             </li>
             <li>
-                <a href="#">Pranešimai</a>
+                @Html.ActionLink("Pranešimai", "Index", "Notifications")
                 <ul>
-                    <li><a href="#">Visi pranešimai</a></li>
-                    <li><a href="#">Archyvuoti pranešimai</a></li>
+                    <li>@Html.ActionLink("Visi pranešimai", "Index", "Notifications")</li>
+                    <li>@Html.ActionLink("Archyvuoti pranešimai", "Archived", "Notifications")</li>
                 </ul>
             </li>
             <li>
-                <a href="#">Rezervacijos</a>
+                @Html.ActionLink("Rezervacijos", "Index", "Rezervations")
                 <ul>
-                    <li><a href="#">Visos rezervacijos</a></li>
-                    <li><a href="#">Nauja rezervacija</a></li>
-                    <li><a href="#">Laukiančios patvirtinimo</a></li>
-                    <li><a href="#">Šiuo metu aktyvios</a></li>
-                    <li><a href="#">Praėjusios rezervacijos</a></li>
+                    <li>@Html.ActionLink("Visos rezervacijos", "Index", "Rezervations")</li>
+                    <li>@Html.ActionLink("Nauja rezervacija", "New", "Rezervations")</li>
+                    <li>@Html.ActionLink("Laukiančios patvirtinimo", "Pending", "Rezervations")</li>
+                    <li>@Html.ActionLink("Šiuo metu aktyvios", "Active", "Rezervations")</li>
+                    <li>@Html.ActionLink("Praėjusios rezervacijos", "Archived", "Rezervations")</li>
                 </ul>
             </li>
             <li>
-                <a href="#">Kalendorius</a>
+                @Html.ActionLink("Kalendorius", "Index", "Calendar")
                 <ul>
-                    <li><a href="#">Dienos</a></li>
-                    <li><a href="#">Savaitės</a></li>
-                    <li><a href="#">Mėnesio</a></li>
+                    <li>@Html.ActionLink("Dienos", "Day", "Calendar")</li>
+                    <li>@Html.ActionLink("Savaitės", "Week", "Calendar")</li>
+                    <li>@Html.ActionLink("Mėnesio", "Month", "Calendar")</li>
                 </ul>
             </li>
             <li>
