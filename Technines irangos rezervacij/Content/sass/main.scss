@@ -17,4 +17,5 @@ $fontFamily: 'Roboto', sans-serif;
 @import "shared/content";
 
 // import other styles
-@import "home";
+@import "views/home";
+@import "views/notifications";

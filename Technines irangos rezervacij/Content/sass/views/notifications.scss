@@ -1,0 +1,34 @@
+﻿// notifications page
+
+.page-container.notifications-page {
+    .notifications-list {
+        .notification {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 1em 2em;
+            border: 1px solid $borderColor;
+
+            &:not(:last-child) {
+                border-bottom: none;
+            }
+
+            .col {
+                &:nth-child(1) {
+                    .from {
+                        font-weight: bold;
+                    }
+
+                    .excerpt {
+                        font-size: 0.85em;
+                        color: silver;
+                    }
+                }
+
+                &:nth-child(2) {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
