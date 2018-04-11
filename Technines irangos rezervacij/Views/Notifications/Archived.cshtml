@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Technines_irangos_rezervacij.Models.Notification>
 @{
     ViewBag.Title = "Archyvuoti pranešimai";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,53 +8,22 @@
     <h2>Archyvuoti pranešimai</h2>
 
     <div class="notifications-list">
-        <div class="notification">
-            <div class="col">
-                <p class="from">Margaret Andriert</p>
-                <p class="excerpt">
-                    Morbi elementum malesuada diam. Mauris ligula turpis, malesuada eget quam congue, pulvinar dignissim lacus.
-                </p>
+        
+        @foreach (var notification in Model)
+        {
+            <div class="notification">
+                <div class="col">
+                    <p class="from">@notification.Topic</p>
+                    <p class="excerpt">
+                        @notification.Text
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <p class="time">@notification.DateCreated</p>
+                </div>
             </div>
-            <div class="col">
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="time">14:23</p>
-            </div>
-        </div>
-        <div class="notification">
-            <div class="col">
-                <p class="from">Margaret Andriert</p>
-                <p class="excerpt">
-                    Morbi elementum malesuada diam. Mauris ligula turpis, malesuada eget quam congue, pulvinar dignissim lacus.
-                </p>
-            </div>
-            <div class="col">
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="time">14:23</p>
-            </div>
-        </div>
-        <div class="notification">
-            <div class="col">
-                <p class="from">Margaret Andriert</p>
-                <p class="excerpt">
-                    Morbi elementum malesuada diam. Mauris ligula turpis, malesuada eget quam congue, pulvinar dignissim lacus.
-                </p>
-            </div>
-            <div class="col">
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="time">14:23</p>
-            </div>
-        </div>
-        <div class="notification">
-            <div class="col">
-                <p class="from">Margaret Andriert</p>
-                <p class="excerpt">
-                    Morbi elementum malesuada diam. Mauris ligula turpis, malesuada eget quam congue, pulvinar dignissim lacus.
-                </p>
-            </div>
-            <div class="col">
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="time">14:23</p>
-            </div>
-        </div>
+        }
+
     </div>
 </div>

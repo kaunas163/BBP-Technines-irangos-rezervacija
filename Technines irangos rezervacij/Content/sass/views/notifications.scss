@@ -17,11 +17,13 @@
                 &:nth-child(1) {
                     .from {
                         font-weight: bold;
+                        margin-bottom: 0;
                     }
 
                     .excerpt {
                         font-size: 0.85em;
                         color: silver;
+                        margin-top: 0.5em;
                     }
                 }
 

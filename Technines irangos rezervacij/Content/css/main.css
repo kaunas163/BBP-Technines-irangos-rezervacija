@@ -156,9 +156,26 @@ ul {
   .page-container.notifications-page .notifications-list .notification:not(:last-child) {
     border-bottom: none; }
   .page-container.notifications-page .notifications-list .notification .col:nth-child(1) .from {
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 0; }
   .page-container.notifications-page .notifications-list .notification .col:nth-child(1) .excerpt {
     font-size: 0.85em;
-    color: silver; }
+    color: silver;
+    margin-top: 0.5em; }
   .page-container.notifications-page .notifications-list .notification .col:nth-child(2) {
     text-align: right; }
+
+.page-container.equipment-page .grid {
+  display: flex;
+  flex-wrap: wrap; }
+  .page-container.equipment-page .grid .equipment {
+    flex-basis: 30%;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    margin: 1em; }
+    .page-container.equipment-page .grid .equipment img {
+      width: 100%; }
+    .page-container.equipment-page .grid .equipment .content {
+      padding: 1em 2em; }
+      .page-container.equipment-page .grid .equipment .content h3 {
+        margin: 1em 0 0.5em; }

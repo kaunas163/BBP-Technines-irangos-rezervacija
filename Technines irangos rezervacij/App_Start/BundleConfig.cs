@@ -19,6 +19,11 @@ namespace Technines_irangos_rezervacij
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/Content/js").Include(
+                "~/Content/js/jquery-ui.min.js",
+                "~/Content/js/moment.min.js",
+                "~/Content/js/main.js"));
+
 //            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
 //                      "~/Scripts/bootstrap.js",
 //                      "~/Scripts/respond.js"));
