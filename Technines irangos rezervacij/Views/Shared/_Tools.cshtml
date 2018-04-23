@@ -35,11 +35,12 @@
                     <li>@Html.ActionLink("Atskiri įrangos vienetai", "Equipment", "Equipment")</li>
                     <li>@Html.ActionLink("Įrangos komplektai", "Bundles", "Equipment")</li>
                     <li>@Html.ActionLink("Nuomojama (rodoma) įranga", "ForRent", "Equipment")</li>
+                    <li>@Html.ActionLink("Įrangos tipai", "Types", "Equipment")</li>
                 </ul>
             </li>
-            <li>
+            @*<li>
                 @Html.ActionLink("Ataskaitų generavimas", "Index", "Reports")
-            </li>
+            </li>*@
             <li>
                 @Html.ActionLink("Sistemos nustatymai", "Index", "System")
             </li>
@@ -47,7 +48,7 @@
     </nav>
     <footer>
         <p>
-            Visos teisės saugomos, 2018
+            Visos teisės saugomos, @DateTime.Now.Year
         </p>
     </footer>
 </div>

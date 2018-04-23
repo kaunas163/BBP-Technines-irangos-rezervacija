@@ -21,6 +21,10 @@ namespace Technines_irangos_rezervacij.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<EquipmentType> EquipmentTypes { get; set; }
+        public DbSet<Equipment> Equipments { get; set; }
+        public DbSet<ReservationStatus> ReservationStatuses { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

@@ -15,6 +15,7 @@ $fontFamily: 'Roboto', sans-serif;
 @import "shared/navbar";
 @import "shared/tools-nav";
 @import "shared/content";
+@import "shared/fullcalendar.scss";
 
 // import other styles
 @import "views/home";

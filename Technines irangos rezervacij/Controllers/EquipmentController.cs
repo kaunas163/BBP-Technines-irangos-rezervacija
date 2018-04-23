@@ -28,5 +28,10 @@ namespace Technines_irangos_rezervacij.Controllers
         {
             return View();
         }
+
+        public ActionResult Types()
+        {
+            return View();
+        }
     }
 }

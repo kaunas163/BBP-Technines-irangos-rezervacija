@@ -209,11 +209,41 @@
     <Compile Include="Migrations\201804111728420_AddNotificationsTable.Designer.cs">
       <DependentUpon>201804111728420_AddNotificationsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804231008260_AddEquipmentTypeFields.cs" />
+    <Compile Include="Migrations\201804231008260_AddEquipmentTypeFields.Designer.cs">
+      <DependentUpon>201804231008260_AddEquipmentTypeFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231013358_AddEquipment.cs" />
+    <Compile Include="Migrations\201804231013358_AddEquipment.Designer.cs">
+      <DependentUpon>201804231013358_AddEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231017568_AddEquipmentBundles.cs" />
+    <Compile Include="Migrations\201804231017568_AddEquipmentBundles.Designer.cs">
+      <DependentUpon>201804231017568_AddEquipmentBundles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231042236_AddReservationStatuses.cs" />
+    <Compile Include="Migrations\201804231042236_AddReservationStatuses.Designer.cs">
+      <DependentUpon>201804231042236_AddReservationStatuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231045033_FillReservationStatuses.cs" />
+    <Compile Include="Migrations\201804231045033_FillReservationStatuses.Designer.cs">
+      <DependentUpon>201804231045033_FillReservationStatuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231111511_AddReservations.cs" />
+    <Compile Include="Migrations\201804231111511_AddReservations.Designer.cs">
+      <DependentUpon>201804231111511_AddReservations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Equipment.cs" />
+    <Compile Include="Models\EquipmentBundle.cs" />
+    <Compile Include="Models\EquipmentType.cs" />
+    <Compile Include="Models\EquipmentTypeField.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\Reservation.cs" />
+    <Compile Include="Models\ReservationStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -221,13 +251,13 @@
     <Content Include="Content\.gitignore" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\Gulpfile.js" />
+    <Content Include="Content\js\fullcalendar.min.js" />
     <Content Include="Content\js\jquery-ui.min.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\moment.min.js" />
+    <None Include="Content\sass\shared\fullcalendar.scss" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -307,6 +337,7 @@
     <Content Include="Views\Equipment\ForRent.cshtml" />
     <Content Include="Views\Reports\Index.cshtml" />
     <Content Include="Views\System\Index.cshtml" />
+    <Content Include="Views\Equipment\Types.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -321,6 +352,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804111728420_AddNotificationsTable.resx">
       <DependentUpon>201804111728420_AddNotificationsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231008260_AddEquipmentTypeFields.resx">
+      <DependentUpon>201804231008260_AddEquipmentTypeFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231013358_AddEquipment.resx">
+      <DependentUpon>201804231013358_AddEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231017568_AddEquipmentBundles.resx">
+      <DependentUpon>201804231017568_AddEquipmentBundles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231042236_AddReservationStatuses.resx">
+      <DependentUpon>201804231042236_AddReservationStatuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231045033_FillReservationStatuses.resx">
+      <DependentUpon>201804231045033_FillReservationStatuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231111511_AddReservations.resx">
+      <DependentUpon>201804231111511_AddReservations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
