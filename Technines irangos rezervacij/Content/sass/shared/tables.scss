@@ -1,0 +1,23 @@
+﻿table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+
+    thead {
+        text-align: left;
+    }
+
+    td, th {
+        padding: 0.75em 1em;
+        border: 1px solid $borderColor;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: $secondaryColor;
+        }
+    }
+}

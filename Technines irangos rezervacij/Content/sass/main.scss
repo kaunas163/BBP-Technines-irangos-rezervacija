@@ -12,12 +12,15 @@ $fontFamily: 'Roboto', sans-serif;
 
 // import shared styles
 @import "shared/global";
+@import "shared/buttons";
+@import "shared/tables";
 @import "shared/navbar";
 @import "shared/tools-nav";
 @import "shared/content";
-@import "shared/fullcalendar.scss";
+@import "shared/fullcalendar";
 
 // import other styles
 @import "views/home";
 @import "views/notifications";
 @import "views/equipment";
+@import "views/equipment-types";

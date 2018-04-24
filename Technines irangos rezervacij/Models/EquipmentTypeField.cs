@@ -13,6 +13,10 @@ namespace Technines_irangos_rezervacij.Models
 
         public string Value { get; set; }
 
+        public string ValuePlaceholder { get; set; }
+
+        public string Explanation { get; set; }
+
         public int EquipmentTypeId { get; set; }
         public EquipmentType EquipmentType { get; set; }
     }

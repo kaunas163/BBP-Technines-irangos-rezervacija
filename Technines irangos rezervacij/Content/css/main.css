@@ -21,6 +21,29 @@ ul {
   ul li {
     list-style: none; }
 
+.btn-primary {
+  text-decoration: none;
+  color: white;
+  padding: 0.75em 2em;
+  background: #1d72ab;
+  display: inline-block;
+  margin-bottom: 1em; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white; }
+  table thead {
+    text-align: left; }
+  table td, table th {
+    padding: 0.75em 1em;
+    border: 1px solid rgba(0, 0, 0, 0.14); }
+  table a {
+    text-decoration: none;
+    color: black; }
+    table a:hover {
+      color: #1d72ab; }
+
 .navbar {
   background: #124161;
   display: flex;
@@ -1473,3 +1496,19 @@ be a descendant of the grid when it is being dragged.
       padding: 1em 2em; }
       .page-container.equipment-page .grid .equipment .content h3 {
         margin: 1em 0 0.5em; }
+
+.equipment-types-page .equipment-type {
+  background: white;
+  padding: 1em 2em;
+  border: 1px solid rgba(0, 0, 0, 0.14); }
+  .equipment-types-page .equipment-type h3 {
+    margin-bottom: 0; }
+    .equipment-types-page .equipment-type h3 a {
+      text-decoration: none;
+      color: black; }
+      .equipment-types-page .equipment-type h3 a:hover {
+        color: #1d72ab; }
+  .equipment-types-page .equipment-type p {
+    margin: 0; }
+  .equipment-types-page .equipment-type:not(:last-child) {
+    border-bottom: none; }
